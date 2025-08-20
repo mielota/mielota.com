@@ -14,6 +14,8 @@ C'est aussi un ensemble de fonctions utiles.
 Téléchargement : https://www.mielota.com/scripts/mland.sh
 "
 
+dotfiles='git://git.mielota.com/dots.git'
+
 # Main desktop and apps
 desktop="
 hyprland
@@ -96,7 +98,7 @@ dependencies_install() {
 clone_conf() {
   echo "Installation de mes dotfiles"
   rm -rf ~/.config
-  git clone https://github.com/nanthasoru/dots.git .config
+  git clone $dotfiles .config
 
   echo "Installation du fond d'écran"
   mkdir -p .config/wall
