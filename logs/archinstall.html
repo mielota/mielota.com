@@ -3,7 +3,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>mielota</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
@@ -14,7 +14,7 @@
     </header>
     <main>
       <hr />
-      <section>
+      <section class="fat">
         <h2>Introduction</h2>
         <p>
           Tutoriel rapide pour
@@ -30,14 +30,14 @@
         </p>
         <p>Bref bootez sur votre clé usb ou quoi et on commence.</p>
       </section>
-      <section>
+      <section class="fat">
         <h2>Confort</h2>
         <p>Changer la disposition du clavier</p>
         <pre class="shell"># loadkeys fr-latin1</pre>
         <p>Agrandir la police du tty si elle vous paraît trop petite :</p>
         <pre class="shell"># setfont ter-132b</pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>Wi-Fi</h2>
         <p>Connectez vous à votre wifi avec la commande suivante :</p>
         <pre
@@ -62,12 +62,12 @@
           archlinux.org"..
         </p>
       </section>
-      <section>
+      <section class="fat">
         <h2>Heure</h2>
         <p>Configurez l'horloge</p>
         <pre class="shell"># timedatectl set-timezone Europe/Paris</pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>S'occuper des disques</h2>
         <p class="urgent">
           Les opérations de cette section vont supprimer toutes les données de
@@ -122,7 +122,7 @@ nvme0n1     259:0    0 931,5G  0 disk
 └─nvme0n1p2 259:2    0 930,5G  0 part <span class="urgent">/mnt</span>
 ...</pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>Configuration des mirroirs (ou dépôts)</h2>
         <p>
           Nous allons configurer les mirroirs du système pour essayer d'avoir
@@ -159,7 +159,7 @@ nvme0n1     259:0    0 931,5G  0 disk
           class="shell"
         ># pacstrap -K /mnt base base-devel <span class="warn">processeur-ucode</span> linux linux-firmware grub efibootmgr sof-firmware networkmanager <span class="warn">vim</span></pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>Configuration système</h2>
         <p>
           D'abord on doit dire au système comment monter les disques au
@@ -229,7 +229,7 @@ UUID=E108-182B      	/boot     	vfat ....</pre
         <p>Comme serveur son on va utiliser pipewire, installez le :</p>
         <pre class="shell"># pacman -S pipewire pipewire-pulse wireplumber</pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>Configurer GRUB</h2>
         <p>
           Le système est presque prêt, il faut juste configurer un bootloader
@@ -242,7 +242,7 @@ UUID=E108-182B      	/boot     	vfat ....</pre
         <p>Créer la configuration grub :</p>
         <pre class="shell"># grub-mkconfig -o /boot/grub/grub.cfg</pre>
       </section>
-      <section>
+      <section class="fat">
         <h2>Finale</h2>
         <pre class="shell">
 # exit
@@ -283,9 +283,11 @@ UUID=E108-182B      	/boot     	vfat ....</pre
       <hr />
     </main>
     <footer>
-      <section>
-        <p>Bref bienvenue sur <a href="../../res/more/logs/tux.png">Arch Linux</a> beau gosse.</p>
-        <p>Vous pouvez une version script de tout ce code sur <a href="../../scripts/march.sh">ce lien</a></p>
+      <section class="fat">
+        <p>Bref bienvenue sur Arch beau gosse.</p>
+        <img src="/res/logs/tux.png" alt="Une image du magnifique tux tenant un cd avec Arch dessus" width="45%">
+        <p>Vous pouvez avoir une version script de tout ce code sur <a href="/scripts/march.sh">ce lien</a></p>
+        <p>Faites bien attention à le lire, il formate entièment le disque !</p>
       </section>
     </footer>
   </body>

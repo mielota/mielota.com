@@ -10,8 +10,15 @@
   --magenta: #ad8ee6;
   --cyan: #449dab;
   --white: #787c99;
-  --m: 22%;
+  --m: 30%;
   --fs: x-large;
+}
+
+@font-face {
+  font-family: "Jetbrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (max-width: 1200px) {
@@ -24,6 +31,7 @@
 * {
   background-color: var(--bg);
   color: var(--fg);
+  font-family: "Jetbrains Mono";
 }
 
 body {
@@ -36,7 +44,7 @@ a {
   color: var(--blue);
 }
 
-section > * {
+.fat > * {
   font-size: var(--fs);
 }
 
@@ -77,6 +85,9 @@ pre {
   color: var(--red);
 }
 
-img {
-  width: 100%;
+ul.flat {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
 }
