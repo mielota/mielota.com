@@ -1,0 +1,82 @@
+/* Tokyonight colorscheme */
+:root {
+  --bg: #1a1b26;
+  --fg: #a9b1d6;
+  --black: #32344a;
+  --red: #f7768e;
+  --green: #9ece6a;
+  --yellow: #e0af68;
+  --blue: #7aa2f7;
+  --magenta: #ad8ee6;
+  --cyan: #449dab;
+  --white: #787c99;
+  --m: 22%;
+  --fs: x-large;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --m: 4%;
+    --fs: medium;
+  }
+}
+
+* {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  margin-left: var(--m);
+  margin-right: var(--m);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+section > * {
+  font-size: var(--fs);
+}
+
+h1 h2 {
+  font-weight: bolder;
+}
+
+h1 {
+  color: var(--magenta);
+}
+
+h2 {
+  color: var(--cyan);
+}
+
+.log-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.shell {
+  background-color: var(--black);
+  padding: 8px;
+}
+
+.warn {
+  color: var(--bg);
+  background-color: var(--magenta);
+}
+
+.urgent {
+  color: var(--red);
+}
+
+img {
+  width: 100%;
+}
