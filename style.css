@@ -10,8 +10,6 @@
   --magenta: #ad8ee6;
   --cyan: #449dab;
   --white: #787c99;
-  --m: 30%;
-  --fs: x-large;
 }
 
 @font-face {
@@ -21,13 +19,6 @@
   font-style: normal;
 }
 
-@media (max-width: 1200px) {
-  :root {
-    --m: 4%;
-    --fs: medium;
-  }
-}
-
 * {
   background-color: var(--bg);
   color: var(--fg);
@@ -35,8 +26,9 @@
 }
 
 body {
-  margin-left: var(--m);
-  margin-right: var(--m);
+  width: 89%;
+  max-width: 50em;
+  margin: auto;
 }
 
 a {
@@ -45,7 +37,7 @@ a {
 }
 
 .fat > * {
-  font-size: var(--fs);
+  font-size: large;
 }
 
 h1 h2 {
