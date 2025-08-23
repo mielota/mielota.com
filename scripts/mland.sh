@@ -41,7 +41,6 @@ wl-clipboard
 slurp
 
 xdg-desktop-portal-hyprland
-xdg-user-dirs
 
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
@@ -142,9 +141,6 @@ mland_install() {
   
   echo "Activation de ly"
   sudo systemctl enable ly
-
-  echo "Création du 'user dirs'"
-  xdg-user-dirs-update
 
   echo "FIN DE L'INSTALLATION"
   return 0
