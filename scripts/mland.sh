@@ -11,7 +11,7 @@ echo "
 Mon script personnel qui configure mon système après une installation de Arch.
 C'est aussi un ensemble de fonctions utiles.
 
-Téléchargement : https://www.mielota.com/scripts/mland.sh
+Téléchargement : https://mielota.com/scripts/mland.sh
 "
 
 dotfiles='git://git.mielota.com/dots.git'
