@@ -20,6 +20,10 @@ dotfiles='git://git.mielota.com/dots.git'
 desktop="
 hyprland
 hyprpaper
+hyprpicker
+hypridle
+hyprlock
+
 alacritty
 waybar
 wofi
@@ -31,7 +35,9 @@ zathura-pdf-poppler
 thunderbird
 bitwarden
 mpv
+yt-dlp
 nsxiv
+newsboat
 
 pavucontrol
 dunst
@@ -41,6 +47,7 @@ wl-clipboard
 slurp
 
 xdg-desktop-portal-hyprland
+xdg-user-dirs
 
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
@@ -97,11 +104,17 @@ dependencies_install() {
 clone_conf() {
   echo "Installation de mes dotfiles"
   rm -rf ~/.config
-  git clone $dotfiles .config
+  git clone $dotfiles ~/.config
 
   echo "Installation du fond d'écran"
-  mkdir -p .config/wall
-  curl -L "www.mielota.com/res/tokyo.jpg" -o ~/.config/wall/wall.jpg
+  mkdir -p ~/.config/wall
+  curl -L "mielota.com/res/tokyo.jpg" -o ~/.config/wall/wall.jpg
+
+  echo "Création des users dirs"
+  cd ~
+  mkdir code dl music pic pub vid
+  xdg-user-dirs-update
+  cd -
 }
 
 build_blink_neovim() {
