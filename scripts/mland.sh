@@ -24,7 +24,7 @@ hyprpicker
 hypridle
 hyprlock
 
-alacritty
+ghostty
 waybar
 wofi
 ly
