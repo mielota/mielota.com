@@ -26,7 +26,7 @@ hyprlock
 
 ghostty
 waybar
-wofi
+wmenu
 ly
 
 zathura
