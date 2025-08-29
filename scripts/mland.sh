@@ -64,17 +64,11 @@ jdtls
 lua-language-server
 pyright
 vscode-langservers-extracted
-
-prettier
-python-black
-stylua
-google-java-format
 "
 
 other="
 time
 tree
-fastfetch 
 
 openssh
 
