@@ -62,4 +62,4 @@ mland_install
 
 ## Svp
 
-Ces scripts me permettent surtout d'automatiser tout le travail ennuyant que nécessite l'installation et la configuration de mon système, je ne veux pas cassez votre configuration système :(
+Ces scripts me permettent surtout d'automatiser tout le travail ennuyant que nécessite l'installation et la configuration de mon système, je ne voudrais pas casser votre configuration système actuelle :(
