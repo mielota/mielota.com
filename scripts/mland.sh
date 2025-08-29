@@ -37,7 +37,6 @@ bitwarden
 mpv
 yt-dlp
 nsxiv
-newsboat
 
 pavucontrol
 dunst
