@@ -74,6 +74,9 @@ openssh
 
 grml-zsh-config
 zsh
+
+man-db
+man-pages
 "
 
 dependencies_install() {
