@@ -38,6 +38,9 @@ mpv
 yt-dlp
 nsxiv
 
+typst
+tinymist
+
 pavucontrol
 dunst
 
