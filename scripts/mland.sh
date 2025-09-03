@@ -47,9 +47,6 @@ slurp
 
 xdg-desktop-portal-hyprland
 xdg-user-dirs
-
-ttf-jetbrains-mono-nerd
-ttf-nerd-fonts-symbols
 "
 
 # IDE
