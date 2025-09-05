@@ -14,7 +14,7 @@ C'est aussi un ensemble de fonctions utiles.
 Téléchargement : https://mielota.com/scripts/mland.sh
 "
 
-dotfiles='https://codeberg.org/mielota/dots'
+dotfiles='https://github.com/mielota/dots'
 
 # Main desktop and apps
 desktop="
